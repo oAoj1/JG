@@ -8,9 +8,18 @@ var deschtml = document.querySelector('div#resultado-html')
 var desccss = document.querySelector('div#resultado-css')
 var descjs = document.querySelector('div#resultado-js')
 /* */
+var menu_responsivo = document.querySelector('div.opcoes-responsivo')
 
 function abrirestudar(){
     estudos.style.display = 'block'
+}
+
+function abrirestudarresponsivo(){
+    menu_responsivo.style.display = 'block'
+}
+
+function fecharestudarresponsivo(){
+    menu_responsivo.style.display = 'none'
 }
 
 function fecharestudar(){

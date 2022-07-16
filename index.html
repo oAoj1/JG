@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/icon/jg-sfundo.png" type="image/x-icon">
-    <title>JG - Códigos</title>
+    <title>JG - Home</title>
     <style>
         @font-face{
             font-family:'html';
@@ -49,16 +49,38 @@
                        </li>
                     </ul>
                 </div><!--resultado-estudar-->
-
             </div><!--opcoes-->
+            
+            <div class="menu-responsivo-wraper">
+                <img onclick="abrirestudarresponsivo()" 
+                src="imagens/menu/menu4.png"
+                id="menu-responsivo-img">
+            </div><!--menu-responsivo--wraper-->
+
+            <div class="opcoes-responsivo">
+                <ul>
+                    <img src="imagens/menu/botao-fechar.png" 
+                    id="fechar-menu-responsivo"
+                    onclick="fecharestudarresponsivo()">
+                    <li>
+                        <a href="#estudar-html">html</a>
+                    </li>
+                    <li>
+                        <a href="#estudar-css">css</a>
+                    </li>
+                    <li>
+                        <a href="#estudar-js">js</a>
+                    </li>
+                </ul>
+            </div><!--menu-responsivo-->
 
             <div class="entrar">
                 <ul>
                     <li>
-                        <a class="cadastro" href="#">Cadastrar</a>
+                        <a class="cadastro" href="cadastro.html">Cadastrar</a>
                     </li>
                     <li>
-                        <a class="login" href="#">Login</a>
+                        <a class="login" href="login.html">Login</a>
                     </li>
                 </ul>
             </div><!--entrar-->
@@ -120,7 +142,7 @@
                 </div><!--css-->
 
                 <div class="js">
-                   <a href="#resultado-js"><h2 onclick="mudarjs()">java script</h2></a>
+                   <a href="#resultado-js"><h2 onclick="mudarjs()">js</h2></a>
                     <a href="#resultado-js"><img onclick="mudarjs()" class="img-js" src="imagens/linguagens/js.png"></a>
                     <div style="display: none;" id="resultado-js">
                         <div class="texto">
@@ -139,7 +161,7 @@
         <div id="estudar-html" class="estudar-html">
             <div class="titulo-html">
                 <a style="text-decoration: none;" href=""><h1>html</h1></a>
-                <a style="text-decoration: none;" href=""><h3>Clique e aprenda a linguagem de marcação</h3></a>
+                <a style="text-decoration: none;" href=""><h3>Aprenda a linguagem de marcação</h3></a>
             </div><!--titulo-html-->
             <div class="codigos-html">
                 <a href="#"><img src="imagens/linguagens/html-codigos.png" alt=""></a>
@@ -149,7 +171,7 @@
         <div id="estudar-css" class="estudar-css">
             <div class="titulo-css">
                 <a style="text-decoration: none;" href=""><h1>css</h1></a>
-                <a style="text-decoration: none;" href=""><h3>Clique e aprenda a linguagem de estilo</h3></a>
+                <a style="text-decoration: none;" href=""><h3>Aprenda a linguagem de estilo</h3></a>
             </div><!--titulo-css-->
             <div class="codigos-css">
                 <a href="#"><img src="imagens/linguagens/css-codigos.png" alt=""></a>
@@ -158,8 +180,8 @@
 
         <div id="estudar-js" class="estudar-js">
             <div class="titulo-js">
-                <a style="text-decoration: none;" href=""><h1>java script</h1></a>
-                <a style="text-decoration: none;" href=""><h3>Clique e aprenda a linguagem de programação</h3></a>
+                <a style="text-decoration: none;" href=""><h1>js</h1></a>
+                <a style="text-decoration: none;" href=""><h3>Aprenda a linguagem de programação</h3></a>
             </div><!--titulo-js-->
             <div class="codigos-js">
                 <a href="#"><img src="imagens/linguagens/js-codigos.png" alt=""></a>
@@ -190,9 +212,7 @@
         <div class="logo-footer">
            <a href="index.html"><img src="imagens/icon/jg-sfundo.png" alt=""></a>
         </div><!--logo-footer-->
-        <div class="texto-footer">
 
-        </div><!--texto-footer-->
         <div class="redes-sociais">
             <ul>
                 <li>

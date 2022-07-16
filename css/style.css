@@ -87,6 +87,14 @@ header{
     position: relative;
 }
 
+.menu-responsivo-wraper{
+    display: none;
+}
+
+.opcoes-responsivo{
+    display: none;
+}
+
 .opcoes ul{
     list-style: none;
 }
@@ -109,6 +117,8 @@ header{
 .opcoes ul li a:hover{
     background-color: var(--p2);
 }
+
+/* */
 
 #resultado-estudar{
     display: none;
@@ -143,9 +153,22 @@ header{
     background-color: #00baba;
 }
 
+/* */
+
+#resultado-estudar-responsivo{
+    display: none;
+}
+
+#fechar-responsivo{
+    max-width: 20px;
+}
+
+/* */
+
 .entrar{
     width: 100%;
     position: relative;
+    text-align: right;
     max-width: max-content;
 }
 
@@ -333,7 +356,7 @@ h2{
 
 .img-html, .img-css, .img-js{
     padding: 1em;
-    margin: 1em 8em;
+    margin: 1em 4em;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 20px;
@@ -688,4 +711,148 @@ footer{
 .redes-sociais img:hover{
     transform: translateY(-10px);
     background-color: var(--);
+}
+
+/* */
+
+@media (max-width:900px){
+ 
+    .logo-header{
+        width: 100%;
+    }
+
+    .opcoes{
+        display: none;
+    }
+
+    #fechar-menu-responsivo{
+        transition: 0.3s;
+        margin: 1em 0 0 0.5em;
+        max-width: 25px;
+        filter: invert(1);
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #fechar-menu-responsivo:hover{
+        transform: translateY(-5px);
+        background-color: var(--c1);
+    }
+
+    .menu-responsivo-wraper{
+        display: block;
+        position: relative;
+        top: 0.1em;
+        left: 1em;
+        width: 25%;
+    }
+
+    #menu-responsivo-img{
+        transition: 0.3s;
+        cursor: pointer;
+        max-width: 50px;
+    }
+
+    #menu-responsivo-img:hover{
+        transform: translateY(-10px);
+    }
+
+    .opcoes-responsivo{
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .opcoes-responsivo ul{
+        list-style: none;
+        background-color: var(--p1);
+        border-radius: 10px;
+    }
+
+    .opcoes-responsivo ul li{
+        padding: 0.5em;
+        display: inline-block;
+        margin: auto;
+        position: relative;
+        bottom: 0.5em;
+        text-align: center;
+    }
+
+    .opcoes-responsivo ul li a{
+        border-radius: 10px;
+        padding: 0.5em;
+        transition: 0.3s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--c1);
+    }
+
+    .opcoes-responsivo ul li a:hover{
+        background-color: var(--c2);
+    }
+
+    .entrar{
+        width: 100%;
+        padding: 1em 0 0 0;
+        text-align: center;
+    }
+
+    .entrar ul{
+        display: block;
+    }
+
+    .entrar ul li{
+        padding: 1em 0;
+        margin: 0.5em;
+    }
+
+    .linguagens h2{
+        padding: 1em 2em;
+        text-align: center;
+        margin: auto;
+    }
+
+    .linguagens h2:hover{
+        font-size: 1.5em;
+    }
+
+    #estudar-linguagens h1{
+        font-size: 3em;
+    }
+
+    #estudar-linguagens h3{
+        font-size: 2em;
+    }
+
+    .img-html{
+        display: none;
+    }
+
+    .img-css{
+        display: none;
+    }
+
+    .img-js{
+        display: none;
+    }
+
+    #estudar-linguagens img{
+        display: none;
+    }
+
+    .texto-sobre{
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .logo-footer{
+        max-width: max-content;
+    }
+
+    .logo-footer img{
+        max-width: 50px;
+    }
+    
 }

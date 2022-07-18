@@ -120,51 +120,6 @@ header{
 
 /* */
 
-#resultado-estudar{
-    display: none;
-    width: 100%;
-    height: 100%;
-    max-width: max-content;
-}
-
-#resultado-estudar ul{
-    background-color: var(--p1);
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    display: block;
-    z-index: 1;
-    border-radius: 10px;
-}
-
-#resultado-estudar ul li{
-    text-align: center;
-    margin: auto;
-    display: block;
-}
-
-#resultado-estudar ul li a{
-    margin: 1em 0;
-    color: var(--c1);
-}
-
-#resultado-estudar ul li a:hover{
-    color: var(--c1);
-    background-color: #00baba;
-}
-
-/* */
-
-#resultado-estudar-responsivo{
-    display: none;
-}
-
-#fechar-responsivo{
-    max-width: 20px;
-}
-
-/* */
-
 .entrar{
     width: 100%;
     position: relative;
@@ -215,6 +170,8 @@ header{
     background-color: var(--c1)
 }
 
+/* */
+
 section{
     width: 100%;
     height: 100%;
@@ -222,102 +179,87 @@ section{
     background-color: var(--p2);
 }
 
-.titulo-section{
-    max-width: 600px;
-    width: 100%;
-    position: relative;
-    margin: auto;
+.titulo-fe{
+    padding: 4em 0;
     text-align: center;
-    z-index: 2;
+    margin: auto;
 }
 
-.titulo-section h1{
-    padding: 1.2em 0 2em 0 ;
+.titulo-fe h1{
+    font-size: 3em;
     color: var(--b3);
     font-weight: normal;
-    font-size: 3em;
-}
-
-.titulo-section span{
-    transition: 0.5s;
-    cursor: default;
-    font-size: 2em;
-    color: var(--c3);
-}
-
-.titulo-section span:hover{
-    cursor: pointer;
-    color: var(--c1);
-}
-
-#frontend{
-    display: none;
-    position: relative;
-    bottom: 5em;
-}
-
-#frontend .cores{
-    cursor: default;
-    padding: 0.1em;
-    border-radius: 50px;
-    transition: 0.5s;
-}
-
-#frontend .cores:hover{
-    color:var(--ajs);
-}
-
-#frontend .textos{
-    cursor: default;
-    padding: 0.1em;
-    border-radius: 50px;
-    transition: 0.5s;
-}
-
-#frontend .textos:hover{
     text-transform: uppercase;
 }
 
-#frontend .fontes{
-    cursor: default;
-    padding: 0.1em 0 0 0;
-    border-radius: 50px;
-    transition: 0.5s;
-}
-
-#frontend .fontes:hover{
-    font-family: 'html';
-}
-
-#frontend p{
-    text-align: left;
-    font-size: 1.5em;
-    color: var(--b2);
-    font-weight: normal;
-}
-
-#frontend img{
-    top: 2em;
-    position: relative;
+.titulo-fe span{
+    z-index: 2;
+    font-size: 6em;
+    color: var(--c3);
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.circulo{
+.titulo-fe span:hover{
+    color: var(--c1);
+}
+
+.desc-fe{
+    cursor: default;
+    display: none;
+    margin: auto;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: circle(500px at right 700px);
-    background-color: var(--c4);
+    max-width: 600px;
+}
+
+.abrir.active .desc-fe{
+    display: block;
+}
+
+
+.desc-fe p{
+    color: var(--b3);
+    font-size: 0.4em;
+}
+
+.desc-fe ol{
+    text-align: left;
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+    display: block;
+    padding: 0.5em 0 0 0;
+    list-style-type: none;
+}
+
+.desc-fe ol li{
+    font-size: 0.4em;
+    color: var(--b3);
     transition: 0.3s;
 }
+
+.desc-fe ol li:hover{
+    transform: translateY(-10px);
+}
+
+.desc-fe ion-icon{
+    color: var(--c1);
+}
+
+/* */
 
 main{
     width: 100%;
     height: 100%;
     position: relative;
     background-color: var(--b2);
+}
+
+.container-ling{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
 }
 
 .linguagens{
@@ -354,66 +296,42 @@ h2{
     margin: auto;
 }
 
-.img-html, .img-css, .img-js{
-    padding: 1em;
-    margin: 1em 4em;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 20px;
-}
+/* */
 
-.img-html:hover{
-    background-color: var(--lhtml);
-    transform: translateY(-10px);
-}
-
-.img-css:hover{
-    background-color: var(--acss);
-    transform: translateY(-10px);
-}
-
-.img-js:hover{
-    background-color: var(--ajs);
-    transform: translateY(-10px);
+.html{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 #resultado-html{
-    width: 100%;
-    max-width: 500px;
     margin: auto;
     text-align: center;
 }
 
-#resultado-html p{
-    text-align: left;
-}
-
-#resultado-html img{
-    padding: 1em;
-    border-radius: 50px;
-    transition: 0.3s;
-    margin: 2em 0;
-}
-
-#resultado-html img:hover{
-    background-color: #ad591c;
-}
-
 .html h2:hover{
     color: var(--lhtml);
-    font-size: 2em;
+    transform: translateY(-5px);
+}
+
+ion-icon.img-html{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin:0 2em;
+    transition: 0.3s;
+}
+
+.img-html:hover{
+    color: var(--lhtml);
+    transform: translateY(-10px);
 }
 
 /* */
 
 #resultado-css{
     width: 100%;
-    max-width: 500px;
     margin: auto;
-    text-align: center;
-}
-
-#resultado-css p{
     text-align: center;
 }
 
@@ -424,62 +342,69 @@ h2{
     margin: 2em 0;
 }
 
-#resultado-css img:hover{
-    background-color: #1869ac;
-}
-
 .css h2:hover{
     color: var(--acss);
-    font-size: 2em;
+    transform: translateY(-5px);
+}
+
+ion-icon.img-css{
+    width: 150px;
+    height: 150px;
+    margin:0 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-css:hover{
+    color: var(--acss);
+    transform: translateY(-10px);
 }
 
 /* */
 
 #resultado-js{
     width: 100%;
-    max-width: 500px;
     margin: auto;
     text-align: center;
 }
 
-#resultado-js p{
-    text-align: right;
-}
-
-#resultado-js img{
-    padding: 1em;
-    border-radius: 50px;
-    transition: 0.3s;
-    margin: 2em 0;
-}
-
-#resultado-js img:hover{
-    background-color: #b9a104;
-}
-
 .js h2:hover{
     color: var(--ajs);
-    font-size: 2em;
+    transform: translateY(-5px);
+}
+
+ion-icon.img-js{
+    margin: 0 2em;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-js:hover{
+    color: var(--ajs);
+    transform: translateY(-10px);
 }
 
 /* */
 
 .texto{
     width: 100%;
-    max-width: 400px;
+    margin: auto;
+    padding: 1em;
 }
 
 .texto p{
     font-size: 1.2em;
 }
 
+/* */
+
 .estudar-linguagens{
     width: 100%;
     height: 100%;
     position: relative;
 }
-
-/* */
 
 .estudar-html{
     width: 100%;
@@ -488,7 +413,13 @@ h2{
     text-align: center;
 }
 
+.estudar-html a{
+    text-decoration: none;
+}
+
 .titulo-html{
+    margin: auto;
+    max-width: max-content;
     padding: 2em 0;
 }
 
@@ -497,6 +428,12 @@ h2{
     text-transform: uppercase;
     color: var(--b3);
     font-weight: normal;
+    transition: 0.3s;
+}
+
+.titulo-html h1:hover{
+    transform: translateY(-10px);
+    color: var(--lhtml);
 }
 
 .titulo-html h3{
@@ -506,17 +443,15 @@ h2{
 }
 
 .codigos-html{
-    margin:1em 0;
+    margin:1.5em 0 3em 0;
 }
 
 .codigos-html img{
     border-radius: 10px;
-    border: 1px solid var(--c1);
     transition: 0.3s;
 }
 
 .codigos-html img:hover{
-    border: 1px solid var(--lhtml);
     transform: translateY(-10px);
     box-shadow: 3px 5px var(--lhtml);
 }
@@ -526,12 +461,13 @@ h2{
 .estudar-css{
     width: 100%;
     height: 100%;
-    margin: auto;
     text-align: center;
 }
 
 .titulo-css{
     padding: 2em 0;
+    max-width: max-content;
+    margin: auto;
 }
 
 .titulo-css h1{
@@ -539,6 +475,12 @@ h2{
     text-transform: uppercase;
     color: var(--b3);
     font-weight: normal;
+    transition: 0.3s;
+}
+
+.titulo-css h1:hover{
+    transform: translateY(-10px);
+    color: var(--acss);
 }
 
 .titulo-css h3{
@@ -553,12 +495,10 @@ h2{
 
 .codigos-css img{
     border-radius: 10px;
-    border: 1px solid var(--c1);
     transition: 0.3s;
 }
 
 .codigos-css img:hover{
-    border: 1px solid var(--acss);
     transform: translateY(-10px);
     box-shadow: 3px 5px var(--acss);
 }
@@ -570,10 +510,11 @@ h2{
     height: 100%;
     margin: auto;
     text-align: center;
-    padding: 0 0 5em 0;
 }
 
 .titulo-js{
+    max-width: max-content;
+    margin: auto;
     padding: 2em 0;
 }
 
@@ -582,6 +523,12 @@ h2{
     text-transform: uppercase;
     color: var(--b3);
     font-weight: normal;
+    transition: 0.3s;
+}
+
+.titulo-js h1:hover{
+    color: var(--ajs);
+    transform: translateY(-10px);
 }
 
 .titulo-js h3{
@@ -596,12 +543,10 @@ h2{
 
 .codigos-js img{
     border-radius: 10px;
-    border: 1px solid var(--c1);
     transition: 0.3s;
 }
 
 .codigos-js img:hover{
-    border: 1px solid var(--ajs);
     transform: translateY(-10px);
     box-shadow: 3px 5px var(--ajs);
 }
@@ -656,6 +601,7 @@ h2{
 /* */
 
 footer{
+    padding: 1em;
     width: 100%;
     height: 100%;
     position: relative;
@@ -663,16 +609,11 @@ footer{
 }
 
 .logo-footer{
-    position: relative;
-    top: 1em;
-    left: 0;
-    width: 100%;
-    text-align: right;
     padding: 1em 2em 0.5em 2em;
 }
 
 .logo-footer img{
-    max-width: 80px;
+    max-width: 70px;
     transition: 0.5s;
 }
 
@@ -681,12 +622,9 @@ footer{
 }
 
 .redes-sociais{
-    text-align: center;
+
     width: 100%;
-    max-width: max-content;
-    position: relative;
-    bottom:3em ;
-    margin: auto;
+    text-align: center;
 }
 
 .redes-sociais ul{

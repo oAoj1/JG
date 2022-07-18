@@ -35,44 +35,7 @@
                         <a href="#sobre">sobre</a>
                     </li>
                 </ul>
-
-                <div id="resultado-estudar" onmouseenter="abrirestudar()" onmouseleave="fecharestudar()">
-                    <ul>
-                       <li>
-                            <a href=#estudar-html>html</a>
-                       </li>
-                       <li>
-                            <a href="#estudar-css">css</a>
-                       </li>
-                       <li>
-                            <a href="#estudar-js">js</a>
-                       </li>
-                    </ul>
-                </div><!--resultado-estudar-->
             </div><!--opcoes-->
-            
-            <div class="menu-responsivo-wraper">
-                <img onclick="abrirestudarresponsivo()" 
-                src="imagens/menu/menu4.png"
-                id="menu-responsivo-img">
-            </div><!--menu-responsivo--wraper-->
-
-            <div class="opcoes-responsivo">
-                <ul>
-                    <img src="imagens/menu/botao-fechar.png" 
-                    id="fechar-menu-responsivo"
-                    onclick="fecharestudarresponsivo()">
-                    <li>
-                        <a href="#estudar-html">html</a>
-                    </li>
-                    <li>
-                        <a href="#estudar-css">css</a>
-                    </li>
-                    <li>
-                        <a href="#estudar-js">js</a>
-                    </li>
-                </ul>
-            </div><!--menu-responsivo-->
 
             <div class="entrar">
                 <ul>
@@ -88,69 +51,89 @@
     </header>
 
     <section>
-        <div class="circulo"></div>
-        <div class="titulo-section"> 
-            <h1>Aprenda o básico de
-            <br>
-            <a style="text-decoration: none;" href="#frontend"><span onclick="abrirFE()" id="titulo-FE">Front-end</span></a>
-            </h1>
-            <div id="frontend">
-                <p>O <span>Front-end</span> é toda parte visual de um site ou de uma aplicação,<i>Client-side</i><br>
-                    <span class="cores">Cores,</span>
-                    <span class="textos">textos,</span>
-                    <span class="fontes">fontes</span> 
-                    tudo está diretamente ligado a essa tecnologia que é uma das principais do mercado hoje
+
+        <div class="titulo-fe">
+            <h1>Aprenda sobre</h1>
+            <span class="abrir">
+            Front-End
+            <div class="desc-fe">
+                <p>O Front-End é a tecnologia é toda a parte visual que envolve o usuário<br> 
+                    <ol>
+                        <li>
+                            <ion-icon name="tv-outline"></ion-icon>
+                            Interface
+                        </li>
+                        <li>
+                            <ion-icon name="cube-outline"></ion-icon>
+                            Objetos
+                        </li>
+                        <li>
+                            <ion-icon name="filter-outline"></ion-icon>
+                            Alinhamentos
+                        </li>
+                        <li>
+                            <ion-icon name="color-palette-outline"></ion-icon>
+                            Cores
+                        </li>
+                        <li>
+                            <ion-icon name="text-outline"></ion-icon>
+                            Fontes
+                        </li>
+                        <li>
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            Textos
+                        </li>
+                    </ol>     
                 </p>
-                <a href="#">
-                    <img onclick="fecharFE()" src="imagens/icon/frontend.png">
-                </a>
-                <h3 style="position: relative; top: 2em; color: #ffffff; font-weight: normal;">
-                    clique na imagem para fechar
-                </h3>
-            </div><!--frontend-->
-        </div><!--titulo-section-->
+            </div><!--desc-fe-->
+        </span>
+        </div><!--titulo_fe-->
+
     </section>
 
     <main id="linguagens">
         <h1 class="titulo-linguagens">O que é linguagens?</h1>
         <div class="linguagens">
-            <div class="container">
+            <div class="container-ling">
             
                 <div class="html">
-                  <a href="#resultado-html"><h2 onclick="mudarhtml()">html</h2></a> 
-                   <a href="#resultado-html"><img onclick="mudarhtml()" class="img-html" src="imagens/linguagens/html.png"></a>
-                    <div id="resultado-html" style="display: none;">
-                        <div class="texto">
-                            <p>O HTML(Hypertext Markup Language) é a tecnologia responsável por fazer as marcações principais da estrutura de um site, <strong>NÃO</strong> é uma linguagem de programação, e sim de marcação. È como se fosse o <strong style="text-transform: uppercase;">esqueleto do site</strong> 
-                            </p>
-                        </div><!--texto-->
-                       <a href="#linguagens"><img style="cursor: pointer;" onclick="fecharresultado()" src="imagens/linguagens/html-ideia.png"></a>
-                        <p style="text-align: center;">clique na imagem para fechar</p>
-                    </div><!--resultado-html-->
+                    <div class="container">
+                        <h2 class="abrirhtml">html</h2>
+                        <ion-icon class="img-html" name="logo-html5"></ion-icon>
+
+                        <div id="resultado-html">
+                            <div class="texto">
+                                <p>O <strong style="color: var(--lhtml); background-color: var(--p3);">HTML</strong>(Hypertext Markup Language) é a tecnologia responsável por fazer as marcações principais da estrutura de um site, <strong>NÃO</strong> é uma linguagem de programação, e sim de marcação. È como se fosse o <strong style="text-transform: uppercase;">esqueleto do site</strong> 
+                                </p>
+                            </div><!--texto-->
+                        </div><!--resultado-html-->
+                    </div>
                 </div><!--html-->
-
+                
                 <div class="css">
-                    <a href="#resultado-css"><h2 onclick="mudarcss()">css</h2></a>
-                   <a href="#resultado-css"><img onclick="mudarcss()" class="img-css" src="imagens/linguagens/css.png"></a>
-                    <div style="display: none;" id="resultado-css">
-                        <div class="texto">
-                            <p>O CSS (Cascading Style Sheet) é a tecnologia que acompanha o HTML, responsável por dar estilo e cores ao nosso site, margens, cores, espaçamentos etc. È como se fosse a <strong style="text-transform: uppercase;">roupa do site</strong></p>
-                        </div><!--texto-->
-                        <a href="#linguagens"><img style="cursor: pointer;" onclick="fecharresultado()"  src="imagens/linguagens/css-ideia.png"></a>
-                        <p style="text-align: center;">clique na imagem para fechar</p>
-                    </div><!--resultado-css-->
-                </div><!--css-->
+                    <div class="container">
+                    <h2>css</h2>
+                    <ion-icon class="img-css" name="logo-css3"></ion-icon>
 
-                <div class="js">
-                   <a href="#resultado-js"><h2 onclick="mudarjs()">js</h2></a>
-                    <a href="#resultado-js"><img onclick="mudarjs()" class="img-js" src="imagens/linguagens/js.png"></a>
-                    <div style="display: none;" id="resultado-js">
+                    <div id="resultado-css">
                         <div class="texto">
-                            <p>O Java Script é uma das principais tecnologias do mercado atualmente. A linguagem de programação e responsável por dar funcionalidade ao site. È como se fosse o <strong style="text-transform: uppercase;">cérebro do site</strong></p>
+                            <p>O <strong style="color: var(--acss); background-color: var(--p3);">CSS</strong> (Cascading Style Sheet) é a tecnologia que acompanha o HTML, responsável por dar estilo e cores ao nosso site, margens, cores, espaçamentos etc. È como se fosse a <strong style="text-transform: uppercase;">roupa do site</strong></p>
                         </div><!--texto-->
-                       <a href="#linguagens"><img style="cursor: pointer;" onclick="fecharresultado()" src="imagens/linguagens/js-ideia.png"></a> 
-                        <p style="text-align: center;">clique na imagem para fechar</p>
+                    </div><!--resultado-css-->
+                    </div>
+                </div><!--css-->
+                
+                <div class="js">
+                    <div class="container">
+                    <h2>js</h2>
+                    <ion-icon class="img-js" name="logo-javascript"></ion-icon>
+
+                    <div id="resultado-js">
+                        <div class="texto">
+                            <p>O <strong style="color: var(--ajs); background-color: var(--p3);">Java Script</strong> é uma das principais tecnologias do mercado atualmente. A linguagem de programação e responsável por dar funcionalidade ao site. È como se fosse o <strong style="text-transform: uppercase;">cérebro do site</strong></p>
+                        </div><!--texto-->
                     </div><!--resultado-js-->
+                </div>
                 </div><!--js-->
 
             </div><!--container-->
@@ -158,13 +141,21 @@
     </main>
     
     <section id="estudar-linguagens">
+
         <div id="estudar-html" class="estudar-html">
             <div class="titulo-html">
-                <a style="text-decoration: none;" href=""><h1>html</h1></a>
-                <a style="text-decoration: none;" href=""><h3>Aprenda a linguagem de marcação</h3></a>
+                <a href="">
+                    <h1>html</h1>
+                </a>
+                <a href="">
+                    <h3>Aprenda a linguagem de marcação</h3>
+                </a>
             </div><!--titulo-html-->
+
             <div class="codigos-html">
-                <a href="#"><img src="imagens/linguagens/html-codigos.png" alt=""></a>
+                <a href="#">
+                    <img src="imagens/linguagens/html-codigos.png" alt="">
+                </a>
             </div><!--img-html-->
         </div><!--estudar-html-->
 
@@ -208,7 +199,7 @@
     </main>
 
     <footer>
-        
+        <div class="container">
         <div class="logo-footer">
            <a href="index.html"><img src="imagens/icon/jg-sfundo.png" alt=""></a>
         </div><!--logo-footer-->
@@ -237,8 +228,11 @@
                 </li>
             </ul>
         </div><!--redes-sociais-->
+    </div><!--container-->
     </footer>
     
     <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

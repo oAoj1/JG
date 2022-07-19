@@ -56,108 +56,106 @@ hmtl,body{
 
 /* */
 
+header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color:var(--p3) ;
+}
+
+.logo-header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0 0.5em 2em;
+}
+
+.logo-header img{
+    max-width: 70px;
+    transition: 0.5s;
+}
+
+.logo-header img:hover{
+    transform: translateY(-3px);
+}
+
+/* */
+
+.entrar{
+    width: 100%;
+    position: relative;
+    text-align: right;
+    max-width: max-content;
+}
+
+.entrar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrar ul li{
+    transition: 0.5s;   
+    margin-right: 1em;
+}
+
+.entrar ul li:hover{
+    transform: translateY(-5px);
+}
+
+.entrar ul li a{
+    transition: 0.5s;
+    padding: 0.5em 0.6em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--b2);
+    font-size: 1.2em;
+}
+
+.entrar .cadastro{
+    background-color: var(--p1);
+    color: var(--b1);
+}
+
+.entrar .cadastro:hover{
+    background-color: var(--c1);
+    color: var(--b3);
+}
+
+.entrar .login{
+    color: var(--b3);
+}
+
+.entrar .login:hover{
+    background-color: var(--c1)
+}
+
+/* */
+
 section{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: var(--c4);
 }
 
-.logo-jg{
+.titulo-html{
+    padding: 1em 0;
     margin: auto;
     text-align: center;
+    background-color: var(--p2);
 }
 
-.logo-jg img{
-    padding: 1.5em 0 0;
-    max-width: 50px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.logo-jg img:hover{
-    transform: translateY(-5px);
-}
-
-form{
-    width: 100%;
-    max-width: max-content;
-    height: 100%;
-    position: relative;
-    background-color: var(--p3);
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 2px 2px var(--p1);
-}
-
-.formulario{
-    padding: 5em 0;
-    display: flex;
-    justify-content: center;
-}
-
-form input{
-    margin: 1em 0;
-    border-radius: 10px;
-    border: 0;
-    outline: none;
-    padding: 0.5em;
-    text-transform: uppercase;
-}
-
-.titulo-form{
-    margin: auto;
-    text-align: center;
-    padding: 1em 0 2em 0;
-}
-
-.titulo-form a{
-    color: var(--c2);
-    text-decoration: none;
-}
-
-.titulo-form h1{
-    font-size: 2em;
-    color: var(--b1);
-    text-shadow: 2px 2px var(--c4);
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-.nome-form{
-    width: 100%;
-}
-
-.nome-form input[type=email]{
-    width: 100%;
-}
-
-.nome-form input[type=password]{
-    width: 100%;
-}
-
-.enviar-form{
-    text-align: center;
-}
-
-.enviar-form input[type=submit]{
-    width: 200px;
-    padding: 0.5em;
-    font-size: 1em;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--c2);
-}
-
-.enviar-form input[type=submit]:hover{
-    background-color: var(--c1);
-    transform: translateY(-3px);
-    box-shadow: 3px 3px var(--p2);
+.titulo-html h1{
+    color: var(--lhtml);
+    font-size: 4em;
 }
 
 /* */
 
 footer{
+    padding: 1em;
     width: 100%;
     height: 100%;
     position: relative;
@@ -165,16 +163,11 @@ footer{
 }
 
 .logo-footer{
-    position: relative;
-    top: 1em;
-    left: 0;
-    width: 100%;
-    text-align: right;
     padding: 1em 2em 0.5em 2em;
 }
 
 .logo-footer img{
-    max-width: 80px;
+    max-width: 70px;
     transition: 0.5s;
 }
 
@@ -183,12 +176,9 @@ footer{
 }
 
 .redes-sociais{
-    text-align: center;
+
     width: 100%;
-    max-width: max-content;
-    position: relative;
-    bottom:3em ;
-    margin: auto;
+    text-align: center;
 }
 
 .redes-sociais ul{

@@ -216,7 +216,6 @@ section{
     display: block;
 }
 
-
 .desc-fe p{
     color: var(--b3);
     font-size: 0.4em;
@@ -305,8 +304,14 @@ h2{
 }
 
 #resultado-html{
+    width: 100%;
+    display: none;
     margin: auto;
     text-align: center;
+}
+
+.html.active #resultado-html{
+    display: block;
 }
 
 .html h2:hover{
@@ -330,9 +335,14 @@ ion-icon.img-html{
 /* */
 
 #resultado-css{
+    display: none;
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.css.active #resultado-css{
+    display: block;
 }
 
 #resultado-css img{
@@ -363,9 +373,14 @@ ion-icon.img-css{
 /* */
 
 #resultado-js{
+    display: none;
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.js.active #resultado-js{
+    display: block;
 }
 
 .js h2:hover{
@@ -390,6 +405,7 @@ ion-icon.img-js{
 
 .texto{
     width: 100%;
+    max-width: 500px;
     margin: auto;
     padding: 1em;
 }
@@ -760,18 +776,6 @@ footer{
 
     #estudar-linguagens h3{
         font-size: 2em;
-    }
-
-    .img-html{
-        display: none;
-    }
-
-    .img-css{
-        display: none;
-    }
-
-    .img-js{
-        display: none;
     }
 
     #estudar-linguagens img{
